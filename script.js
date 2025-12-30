@@ -53,6 +53,14 @@ document.addEventListener('DOMContentLoaded', function() {
         countSpan.textContent = submittedCount;
     }
 
+    // Auto-update the last updated date in the footer
+    const footerP = document.querySelector('footer p');
+    if (footerP && footerP.textContent.includes('[Today\'s Date]')) {
+        const today = new Date();
+        const dateString = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        footerP.textContent = footerP.textContent.replace('[Today\'s Date]', dateString);
+    }
+
     // Simple animation on load
     const header = document.querySelector('header h1');
     if (header) {

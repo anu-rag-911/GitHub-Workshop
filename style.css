@@ -111,3 +111,32 @@ footer {
     color: white;
     margin-top: 2rem;
 }
+
+.submission {
+    border: 2px solid #dee2e6;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    background: #f8f9fa;
+    transition: box-shadow 0.3s;
+}
+
+.submission:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.submission h3 {
+    color: #0366d6;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.submission p {
+    margin: 0.5rem 0;
+    color: #495057;
+}
+
+.submission strong {
+    color: #24292e;
+}
